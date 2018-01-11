@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sample-app {
+  display: grid;
+  grid-row-gap: 1em;
+  grid-template-areas: "h" "s" "f";
+  grid-template-rows: 50px 1fr 95px;
+  height: 100vh;
+  text-align: center;
+}
+
+.sample-app footer {
+  grid-area: f;
+}
+
+.sample-app header {
+  align-content: center;
+  align-items:center;
+  display: flex;
+  flex-flow: row nowrap;
+  grid-area: h;
+  justify-content: center;
+}
+
+.sample-app section {
+  grid-area: s;
+}
+
+.sample-message {
+  align-content: center;
+  align-items:center;
+  margin: 3em 4em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.sample-message > div {
+  max-width: 60em;
+}
+
+.spinner {
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+  background-color: #333;
+  border-radius: 100%;  
+  height: 40px;
+  margin: 100px auto;
+  width: 40px;
+}
+
+.spinner-wrapper {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: center;
+}
+
+.upload-page {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    transform: scale(0);
+  }
+  100% {
+    width: 40px;
+    transform: scale(1.0);
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "sample",
+  "name": "sample - share files and fight evil",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "50x50",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
